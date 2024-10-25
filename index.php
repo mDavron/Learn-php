@@ -38,7 +38,9 @@
     'phone' => 998932743776,
     'keys' => 'String',
     'money' => '123.45',
-    'name' => "Hello Php <br>"
+    'name' => "Hello Php <br>",
+    'fruits' => ['banana','orange','apple','potato'],
+
   );
     var_dump( $basket_array);
     $money1 = $basket_array['money'];
@@ -48,6 +50,10 @@
     echo 'Money' .' : '. $money1;
     /* or */
     echo "Money : $money1";
+  ?>
+  <br><br>
+  <?php
+    var_dump( $basket_array['fruits']);
   ?>
 </body>
 
