@@ -19,14 +19,19 @@
   echo "Hello Php <br>";
   print $keys;
 
-echo '<h1>';
-$z = 'Heading1';
-echo $z . '</h1>';
-
-$value = 2;
+  echo '<h1>';
+  $z = 'Heading1';
+  echo $z . '</h1>';
+  $value = 2;
   ?>
+
   <input type="text" value="<?php echo $value?>"> <br><br>
-  <input type="text" value="<?= $value?>"> <br>
+  <input type="text" value="<?= $value+1?>"> <br><br>
+
+  <?php
+  $basket = array('12',45,123.45,'keys');
+  var_dump($basket);
+  ?>
 </body>
 
 </html>
