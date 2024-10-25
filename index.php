@@ -65,6 +65,16 @@
   ?>
   <strong>print_r() function :</strong>
   <?php  print_r($items)?>
+  <hr>
+  <p><b>Foreach loop:</b></p>
+  <?php
+  $students = ['Mark',"Tom","John","Davron"];
+  foreach($students as $key => $student){
+    echo $key . ' : ' . $student . '<br>';
+    /* or */
+    echo "$key - $student<br>";
+  };
+  ?>
 </body>
 
 </html>
