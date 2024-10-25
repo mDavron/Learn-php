@@ -54,7 +54,17 @@
   <br><br>
   <?php
     var_dump( $basket_array['fruits']);
+            /*   0       1       3       4       5  */
+    $items = ['item1','item2','item3','item4','item5',];
+    $counter = 0;
+    while($counter <= 3){
+      echo $items[$counter] . '<br>';
+      $counter++;
+    }
+
   ?>
+  <strong>print_r() function :</strong>
+  <?php  print_r($items)?>
 </body>
 
 </html>
