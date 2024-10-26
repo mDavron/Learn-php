@@ -54,8 +54,7 @@
     echo 'Money' .' : '. $money1;
     /* or */
     echo "Money : $money1";
-  ?>
-  <br><br>
+  ?><br><br>
   <?php
     var_dump( $basket_array['fruits']);
     echo "<hr>";
@@ -68,9 +67,8 @@
     }
 
   ?>
+  <hr>
   <strong>print_r() function :</strong>
-  echo "
-  <hr>";
   <?php  print_r($items)?>
   <hr>
   <p><b>Foreach loop:</b></p>
@@ -79,13 +77,23 @@
   foreach($students as $key => $student){
     echo $key . ' : ' . $student . '<br>';
     /* or */
-    echo "$key - $student<br>";
+    echo "{$key} - {$student}<br>";
   };
   ?>
   <hr>
   <?php
   echo "absdef \"Hello PHP!\" 12345 ";
   echo "<hr>"
+  ?>
+  <h3>2:02:41</h3>
+  <hr>
+  <h2>Functions</h2>
+  <?php
+  function fried_eggs($egg1,$egg2,$oil,$solt){
+    echo "Jarim yaytso iz  $egg1 $egg2 $oil $solt <br>";
+  }
+  fried_eggs('yaytso1','yaytso2','Sol','maslo')
+
   ?>
 </body>
 
