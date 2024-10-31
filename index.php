@@ -95,6 +95,19 @@
   fried_eggs('yaytso1','yaytso2','Sol','maslo')
 
   ?>
+  <!-- function,for loop,counter -->
+  <?php
+  function func($arg){
+    $result = 0;
+    for($i = 0;$i < $arg; $i++){
+      $result = $result+$i;
+      echo " result = $result , i = $i <br>";
+    }
+    return $result;
+  }
+  echo func(5)
+
+  ?>
 </body>
 
 </html>
